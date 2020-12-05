@@ -59,7 +59,7 @@ function squareDigits(num){
     console.log('Squared num', (Math.pow(Number(digit), 2)).toString());
     sqrdDigits += Math.pow(Number(digit), 2).toString()
   }
-  return sqrdDigits;
+  return +sqrdDigits;
 }
 
 console.log('num :>> ', squareDigits(19191));
