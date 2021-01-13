@@ -69,18 +69,18 @@
 // We will consider a, e, i, o, u as vowels for this Kata (but not y).
 // The input string will only consist of lower case letters and/or spaces.
 
-function getCount(str) {
-  let vowelsCount = 0;
+// function getCount(str) {
+//   let vowelsCount = 0;
 	
-		vowelsCount = (str.match(/[aeiou]/ig)||[]).length
+// 		vowelsCount = (str.match(/[aeiou]/ig)||[]).length
 
   
-  return vowelsCount;
-}
+//   return vowelsCount;
+// }
 
-console.log(getCount('The input string will only consist of lower case letters and/or spaces'));
-console.log(getCount('abracadabra'));
-console.log(getCount('pear tree'));
-console.log(getCount('o a kak ushakov lil vo kashu kakao'));
-console.log(getCount('my pyx'));
+// console.log(getCount('The input string will only consist of lower case letters and/or spaces'));
+// console.log(getCount('abracadabra'));
+// console.log(getCount('pear tree'));
+// console.log(getCount('o a kak ushakov lil vo kashu kakao'));
+// console.log(getCount('my pyx'));
 
