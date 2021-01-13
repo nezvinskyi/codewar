@@ -51,15 +51,36 @@
 // 811181 will come out, because 9^2 is 81 and 1^2 is 1.
 // Note: The function accepts an integer and returns an integer
 
-function squareDigits(num){
-  const digits = num.toString().split('');
-  let sqrdDigits = [];
-  console.log('digits :>> ', digits);
-  for (const digit of digits) {
-    console.log('Squared num', (Math.pow(Number(digit), 2)).toString());
-    sqrdDigits += Math.pow(Number(digit), 2).toString()
-  }
-  return +sqrdDigits;
+// function squareDigits(num){
+//   const digits = num.toString().split('');
+//   let sqrdDigits = [];
+//   console.log('digits :>> ', digits);
+//   for (const digit of digits) {
+//     console.log('Squared num', (Math.pow(Number(digit), 2)).toString());
+//     sqrdDigits += Math.pow(Number(digit), 2).toString()
+//   }
+//   return +sqrdDigits;
+// }
+
+// console.log('num :>> ', squareDigits(19191));
+ 
+// ------> Vowel Count
+// Return the number (count) of vowels in the given string.
+// We will consider a, e, i, o, u as vowels for this Kata (but not y).
+// The input string will only consist of lower case letters and/or spaces.
+
+function getCount(str) {
+  let vowelsCount = 0;
+	
+		vowelsCount = (str.match(/[aeiou]/ig)||[]).length
+
+  
+  return vowelsCount;
 }
 
-console.log('num :>> ', squareDigits(19191));
+console.log(getCount('The input string will only consist of lower case letters and/or spaces'));
+console.log(getCount('abracadabra'));
+console.log(getCount('pear tree'));
+console.log(getCount('o a kak ushakov lil vo kashu kakao'));
+console.log(getCount('my pyx'));
+
