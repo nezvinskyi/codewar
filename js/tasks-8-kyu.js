@@ -242,3 +242,12 @@
 
 // console.log(nthPower([1, 2, 3, 4, 5], 2)); //result is 3^2 == 9;
 // console.log(nthPower([1, 2, 3], 3)); // N is outside of the array, so the result is -1.
+
+// -------> Parse nice int from char problem
+// Ask a small girl - "How old are you?". She always says strange things... Lets help her!
+// For correct answer program should return int from 0 to 9.
+// Assume test input string always valid and may look like "1 year old" or "5 years old", etc.. The first char is number only.
+
+function rightAge(str) {
+	return str[0]
+}
