@@ -250,4 +250,72 @@
 // 	return str[0]
 // }
 
-// ------->
+// -------> CSV representation of array
+// const array =
+// 	[[0, 1, 2, 3, 4],
+// 	[10, 11, 12, 13, 14],
+// 	[20, 21, 22, 23, 24],
+// 	[30, 31, 32, 33, 34]];
+
+// const toCsvText = array => array.join('\n');
+
+// console.table(toCsvText(array));
+
+// -------> Aspect Ratio Cropping - Part 1
+// function aspectRatio(x, y) {
+// 	return [Math.ceil(y * 16 / 9), y]
+// }
+// console.log(aspectRatio(640, 480))// [854,480]);
+// console.log(aspectRatio(960, 720)) // [1280,720]);
+// console.log(aspectRatio(1440, 1080)) //[1920,1080]);
+// console.log(aspectRatio(1920, 1440))// [2560,1440]);
+
+// -------> NBA full 48 minutes average
+// function pointsPer48(ppg, mpg) {
+// 	return (ppg !== 0 || mpg !== 0) ? Math.round((ppg * 48 / mpg)*10)/10 : 0;
+// }
+// console.log(pointsPer48(12, 20)); // 28.8
+// console.log(pointsPer48(10, 10)); // 48 
+// console.log(pointsPer48(5, 17)); // 14.1 
+// console.log(pointsPer48(0, 0)); // 0
+
+// -------> Are arrow functions odd?
+// function odds(values){
+// 	return values.filter(value => value % 2);
+// }
+// console.log(odds([1, 2, 3, 4, 5]));
+
+// // -------> Find the position!
+// function position(letter){
+//  return letter.charCodeAt()-96
+// }
+// console.log(position("b"));
+
+// -------> Sum of differences in array
+// function sumOfDifferences(arr) {
+// 	if (arr.length <= 1) {
+// 		return 0
+// 	}
+// 	let total = 0;
+// 	 arr.sort((a, b) => b - a).reduce((acc,value, index) => {
+// 		total += arr[index - 1]-arr[index];
+// 		return acc;
+// 	 })
+// 	return total;
+// }
+// console.log(sumOfDifferences([1,100, 99,9, 15,16, -9 ]));
+// console.log(sumOfDifferences([]));
+// const arr = [1,100, 99,9, 15,16, -9 ];
+// console.log(Math.max(...arr)-Math.min(...arr));
+
+// -------> Lario and Muigi Pipe Problem
+// function pipeFix(numbers){
+//   const newSet = [];
+//   for( let i=numbers[0]; i<=numbers[numbers.length-1]; i++){
+//     newSet.push(i)
+// 	}
+// 	return newSet;
+// }
+// console.log(pipeFix([-1,2,3,5,6,8,9]));
+
+// -------> 
