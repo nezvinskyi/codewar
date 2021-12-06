@@ -1,7 +1,7 @@
 // ------>
 // Your goal is to return multiplication table
 // for number that is always an integer from 1 to 10.
-// For example, a multiplication table (string) 
+// For example, a multiplication table (string)
 // for number == 5 looks like below:
 // P. S. You can use \n in string to jump to the next line.
 
@@ -21,7 +21,7 @@
 // cap is the amount of people the bus can hold excluding the driver.
 // on is the number of people on the bus.
 // wait is the number of people waiting to get on to the bus.
-// If there is enough space, return 0, and if there isn't, 
+// If there is enough space, return 0, and if there isn't,
 // return the number of passengers he can't take.
 
 // function enough(cap, on, wait) {
@@ -37,13 +37,13 @@
 // enough(10, 5, 5);
 // enough(100, 60, 50);
 
-// ------> The first input array is the key to the correct 
-// answers to an exam, like["a", "a", "b", "d"].The second 
+// ------> The first input array is the key to the correct
+// answers to an exam, like["a", "a", "b", "d"].The second
 // one contains a student's submitted answers.
-// The two arrays are not empty and are the same length. 
-// Return the score for this array of answers, 
-// giving + 4 for each correct answer, -1 for each 
-// incorrect answer, and + 0 for each blank answer, represented 
+// The two arrays are not empty and are the same length.
+// Return the score for this array of answers,
+// giving + 4 for each correct answer, -1 for each
+// incorrect answer, and + 0 for each blank answer, represented
 // as an empty string(in C the space character is used).
 
 // If the score < 0, return 0.
@@ -59,7 +59,7 @@
 //     } else if (answersArray[i] === '') {
 //       score;
 //       console.log(`Question: ${questionsArray[i]} - Answer: ${answersArray[i]}. Score: ${score}`);
-    
+
 //     } else {
 //       score -= 1;
 //       console.log(`Question: ${questionsArray[i]} - Answer: ${answersArray[i]}. Score: ${score}`);
@@ -80,7 +80,7 @@
 // checkExam(["b", "c", "b", "a"], ["",  "a", "a", "c"]) //→ 0
 
 // ----->
-// Build a function that returns an array 
+// Build a function that returns an array
 // of integers from n to 1 where n > 0.
 // Example : n=5 >> [5,4,3,2,1]
 
@@ -97,11 +97,11 @@
 // reverseSeq(10);
 
 // ---->
-// When provided with a number between 0 - 9, 
+// When provided with a number between 0 - 9,
 // return it in words.
 // Input :: 1
 // Output :: "One".
-// If your language supports it, 
+// If your language supports it,
 // try using a switch statement.
 
 // function switchItUp(number){
@@ -165,7 +165,7 @@
 //   for (let i = 1; i < arr.length; i+=1){
 //     if (arr[i] !== arr[i - 1] + 1) {
 //       return (`non-consequitive :>>  ${arr[i]} at ${i} position`);
-//     } 
+//     }
 //   }
 //   return null
 // };
@@ -191,7 +191,6 @@
 // console.log('litres :>> ', litres(2.5));
 // console.log('litres :>> ', litres(4.67));
 // console.log('litres :>> ', litres(7.5));
-
 
 // ----> It's the academic year's end, fateful
 // moment of your school report.The averages
@@ -228,7 +227,6 @@
 // console.log('makeNegative(12) :>> ', makeNegative(12));
 // console.log('makeNegative(12) :>> ', makeNegative(0));
 // console.log('makeNegative(12) :>> ', makeNegative(-12));
-
 
 // --------> N-th Power
 // You are given an array with positive numbers and a non-negative number N. You should find the N-th power of the element in the array with the index N. If N is outside of the array, then return -1. Don't forget that the first element has the index 0.
@@ -275,8 +273,8 @@
 // 	return (ppg !== 0 || mpg !== 0) ? Math.round((ppg * 48 / mpg)*10)/10 : 0;
 // }
 // console.log(pointsPer48(12, 20)); // 28.8
-// console.log(pointsPer48(10, 10)); // 48 
-// console.log(pointsPer48(5, 17)); // 14.1 
+// console.log(pointsPer48(10, 10)); // 48
+// console.log(pointsPer48(5, 17)); // 14.1
 // console.log(pointsPer48(0, 0)); // 0
 
 // -------> Are arrow functions odd?
@@ -318,4 +316,93 @@
 // }
 // console.log(pipeFix([-1,2,3,5,6,8,9]));
 
-// -------> 
+// ------->
+
+// var v = 1;
+
+// var f1 = function () {
+//   console.log(v);
+// }
+
+// var f2 = function() {
+//   var v = 2;
+//   f1();
+// };
+
+// f2();
+
+// ------->
+// function repeatStr(n, s) {
+//   // let string = '';
+//   // for (let i = 0; i < n; i++) {
+//   //   string += s;
+//   // }
+//   // return string;
+//   return s.repeat(n);
+// }
+
+// console.log(repeatStr(2, 'hello'));
+
+// ------->
+
+// var data = [
+//   { name: 'Joe', age: 20 },
+//   { name: 'Bill', age: 30 },
+//   { name: 'Kate', age: 23 },
+// ];
+
+// function getNames(data) {
+//   return data.map(function (item) {
+//     return item.name;
+//   });
+// }
+
+// console.log(getNames(data));
+
+// ------->
+
+// function isCoprime(x, y) {
+//   let denominatorsX = [];
+//   for (let i = 1; i <= x; i++) {
+//     if (x % i === 0) {
+//       denominatorsX.push(i);
+//     }
+//   }
+
+//   let denominatorsY = [];
+//   for (let i = 1; i <= y; i++) {
+//     if (y % i === 0) {
+//       denominatorsY.push(i);
+//     }
+//   }
+
+//   for (let i = 0; i < denominatorsY.length; i++) {
+//     if (denominatorsY[i] !== 1 && denominatorsX.includes(denominatorsY[i])) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+// console.log(isCoprime(12, 39));
+
+// ------->
+function singleDigit(n) {
+  let result = n;
+  while (result > 9) {
+    result = toBinarySum(result);
+    console.log('result :>> ', result);
+  }
+  return result;
+
+  function toBinarySum(dig) {
+    let array = [];
+    let temp = dig;
+    do {
+      array.unshift(temp % 2);
+      temp = Number.parseInt(temp / 2);
+    } while (temp !== 0);
+    return array.reduce((acc, curr) => acc + curr);
+  }
+}
+
+console.log(singleDigit(123456789));
